@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+/* ========= reset ========= */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,p{
+	border: 0;margin: 0;padding: 0;font-size: 100%;font-weight: normal;font-style: normal;text-decoration: none;
+}
+table{border-collapse:collapse;border-spacing:0;}
+li {list-style:none;}
+img{border:none;}
+body{font:12px/17px 'ＭＳ Ｐゴシック','MS PGothic','MS Gothic','Verdana',sans-serif;color:#595757;}
+.clearfix:after {   
+  content: ".";   
+  clear: both;   
+  height: 0;   
+  visibility: hidden;   
+  display: block;   
+}            /* 这是对Firefox进行的处理，因为Firefox支持生成元素，而IE所有版本都不支持生成元素 */   
+.clearfix {   
+  display: inline-block;        
+}                /* 这是对 Mac 上的IE浏览器进行的处理 */   
+/* Hides from IE-mac /*/   
+* html .clearfix {height: 1%;}        /* 这是对 win 上的IE浏览器进行的处理 */   
+.clearfix {display: block;}        /* 这是对display: inline-block;进行的修改，重置为区块元素*/   
+/* End hide from IE-mac */  
+
+/* A */
+a{color:#00a0e9;text-decoration:none;}
+a:hover{color:#00a0e9;text-decoration:underline;}
+/* ========= margin ======== */
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.ml20{margin-left:20px;}
+input[type="text"]{
+	height:18px;
+}
+.ac{text-align:center;}
+hr.cb{
+	visibility:hidden;
+	height:0;
+	border:none;
+	clear:both;
+	font-size:0;
+	line-height:0;
+	overflow:hidden;
+}

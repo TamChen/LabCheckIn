@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="candy" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/notice?useUnicode=true&amp;characterEncoding=UTF-8">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="chen228228"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="candy" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+		
+				<value>entity/Sex.hbm.xml</value>
+				<value>entity/Notice.hbm.xml</value>
+				<value>entity/User.hbm.xml</value>
+				</list>
+
+		</property>
+	</bean>
+	
+	<bean id="personManage" class="com.labcheckin.dao.impl.PersonManageImpl" abstract="false"
+		lazy-init="default" autowire="default" dependency-check="default">
+		<property name="sessionFactory" >
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="LoginAction" class="com.labcheckin.action.LoginAction"  scope="prototype">
+       <property name="personManage">
+           <ref bean="personManage" />
+       </property>  
+    </bean>
+    
+	<bean id="EnrollAction" class="com.labcheckin.action.EnrollAction"  scope="prototype">
+	     <property name="personManage">
+	         <ref bean="personManage" />
+	     </property>  
+	</bean>
+
+	<bean id="UserExitAction" class="com.labcheckin.action.UserExitAction"  scope="prototype">
+	</bean>
+	
+
+</beans>

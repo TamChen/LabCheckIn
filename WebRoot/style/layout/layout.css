@@ -1,0 +1,177 @@
+#all{
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto; 
+}
+#header{
+    float: left;
+    background: url('images/mainpic_1.jpg') no-repeat center top;
+    height: 299px;
+    width:1024px;
+    clear: both;
+    margin: 0 auto;}
+.login {
+  padding-top: 135px;
+  padding-left: 742px;
+  width: 158px;
+  background-clip: padding-box;
+  border-bottom-color: #D4DEE8;
+  border-radius: 1px;
+
+}
+
+.login-input1 {
+  display: block;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 20px;
+  padding: 0 9px;
+  text-shadow: 0 0px #D4DEE8;
+  background: #D4DEE8;
+  font-family:"Î¢ÈíÑÅºÚ";
+  font-size: 20x;
+    border-radius: 12px;
+  border-color: #D4DEE8;
+  outline: 0;
+}
+
+.login-input2{
+  display: block;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 20px;
+  padding: 0 9px;
+  text-shadow: 0 0px #D4DEE8;
+  background: #D4DEE8;
+  font-family:"Î¢ÈíÑÅºÚ";
+  font-size: 20x;
+    border-radius: 12px;
+  border-color: #D4DEE8;
+  outline: 0;
+}
+
+
+.login-submit {
+  height: 25px;
+  width: 75px;
+  font-size: 20px;
+  font-family:"Î¢ÈíÑÅºÚ";
+  border: 0px;
+  background-color: #0059A5;
+  color: white;
+}
+.enroll-submit {
+
+  height: 25px;
+  width: 75px;
+  font-size: 20px;
+  font-family:"Î¢ÈíÑÅºÚ";
+  border: 0px;
+  background-color: #0059A5;
+  color: white;
+
+}
+a:hover {color: white;} 
+
+
+
+
+
+
+
+
+#highlight{
+    float: left;
+    clear: both;
+    background: url('images/highlight.jpg') no-repeat center top;
+    height: 53px;
+    width:1024px;
+    margin: 0 auto;}
+
+
+
+#left{
+	float: left;
+	clear: left;
+    height: 310px;
+    width: 795px;
+}
+
+#left_1{
+	float: left;
+	clear: left;
+	height:310px; 
+	width:246px;
+
+}
+#instrument_1{
+	float: left;
+	clear: left;
+    background: url('images/instruments.jpg')no-repeat center top;
+    height: 49px;
+    width:246px;
+    }
+ #link_2{
+	margin-top: 49px;
+    background: url('images/link_2.jpg')   left top;
+    height: 261px;
+    width:246px;
+    }
+
+
+#new_3{
+	float: right;
+	clear:right;
+    background: url('images/new_2.jpg') no-repeat left top;
+    height: 310px;
+    width:549px;
+    }
+#download_4{
+  
+	float: right;
+	clear: right;
+    background: url('images/download_2.jpg') no-repeat right top;
+    height: 311px;
+    width:229px;
+    }
+
+#footer{
+
+	float: left;
+	clear: both;
+    background: url('images/foot_1.jpg') no-repeat center top;
+    height: 108px;
+    width:1024px;
+    margin: 0 auto;
+    
+    }
+#instrument_pic{
+    padding-top: 16px;
+    padding-left: 20px;
+    height: 22px;
+    width:132px;
+}
+#link_pic{
+    padding-top: 26px;
+    padding-left: 20px;
+    height: 22px;
+    width:130px;
+}
+#new_pic{
+    padding-top: 17px;
+    padding-left: 45px;
+    height: 28px;
+    width:100px;
+}
+#download_pic{
+    padding-top: 16px;
+    padding-left: 20px;
+    height: 28px;
+    width:138px;
+}
+
+
+
+
+
+
