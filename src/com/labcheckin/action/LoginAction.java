@@ -33,7 +33,6 @@ public class LoginAction extends ActionSupport{
 	}
 	
 	
-	//��ͨ�û���¼
 	public String loginCheck(){
 		String page = "fail";
 		User user = new User();
